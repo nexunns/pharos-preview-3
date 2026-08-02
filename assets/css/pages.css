@@ -587,3 +587,18 @@ body.modal-open { position: fixed; width: 100%; overflow: hidden; }
     min-height: 48px;
   }
 }
+
+/* ---------- AJUSTES DE LEITURA NO CELULAR (02/08) ---------- */
+
+/* O rotulo "Dores e necessidades" ia parar na direita do card no celular:
+   `align-self: end` alinha na base enquanto o card e grade (desktop), mas
+   vira alinhamento a direita quando ele passa a ser flex em coluna. */
+@media (max-width: 1080px) {
+  .jornada__rotulo { align-self: stretch; }
+}
+
+/* Parede de logos: 25 e impar, entao em 2 ou 3 colunas sobrava uma celula
+   vazia com borda no fim. A ultima logo passa a ocupar a linha inteira. */
+@media (max-width: 900px) {
+  .logo-wall > div:last-child { grid-column: 1 / -1; }
+}
