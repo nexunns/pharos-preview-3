@@ -33,15 +33,15 @@
           </div>
         </div>
         <nav class="footer-col" aria-label="Empresa">
-          <h5>A Pharos</h5>
+          <h2 class="footer-col__titulo">A Pharos</h2>
           <a href="${base}sobre.html">Nós</a><a href="${base}metodologia.html">Metodologia</a><a href="${base}cases.html">Cases</a><a href="${base}blog.html">Artigos</a><a href="${base}contato.html">Contato</a>
         </nav>
         <nav class="footer-col" aria-label="Soluções">
-          <h5>Soluções</h5>
+          <h2 class="footer-col__titulo">Soluções</h2>
           <a href="${base}servicos.html#planejamento-estrategico">Planejamento Estratégico</a><a href="${base}servicos.html#gestao-comercial">Gestão Comercial</a><a href="${base}servicos.html#gestao-financeira">Gestão Financeira</a><a href="${base}servicos.html#valuation">Valuation</a><a href="${base}servicos.html">Ver todas</a>
         </nav>
         <div class="footer-col footer-news">
-          <h5>Newsletter</h5>
+          <h2 class="footer-col__titulo">Newsletter</h2>
           <p>Receba conteúdos de gestão e estratégia no seu&nbsp;e-mail.</p>
           <form class="news-form" data-form data-ok="Pronto. Você vai receber nossos próximos conteúdos." action="https://formsubmit.co/leandro1heliov@gmail.com" method="POST" aria-label="Assinar newsletter">
             <input type="hidden" name="_subject" value="Nova inscrição na newsletter da Pharos" />

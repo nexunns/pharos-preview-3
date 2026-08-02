@@ -27,11 +27,14 @@
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
 
   <!-- Fontes -->
+  <!-- A foto do hero e o maior elemento da primeira tela: sem o preload ela so
+       comeca a baixar depois que o CSS chega, e o LCP no 4G ia a 4,5 s. -->
+  <link rel="preload" as="image" href="assets/img/hero-farol-1200.webp" media="(max-width: 900px)" />
+  <link rel="preload" as="image" href="assets/img/hero-farol-1600.webp" media="(min-width: 901px)" />
   <link rel="preload" href="assets/fonts/open-sauce-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <!-- Estilos -->
-  <link rel="stylesheet" href="assets/css/tokens.css" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/site.css" />
 
   <!-- Schema.org -->
   <script type="application/ld+json">
@@ -154,31 +157,31 @@
       <p class="trust-bar__label">Empresas que navegam com a Pharos</p>
       <div class="marquee">
         <div class="marquee__track" data-marquee>
-          <div class="marquee__item"><img src="assets/img/logos/hapvida.png" alt="Hapvida" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/ceara.png" alt="Ceará Sporting Club" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/rommanel.png" alt="Rommanel" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/guebor-1.png" alt="Guebor" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/oticas_diniz.png" alt="Óticas Diniz" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/metalica.png" alt="Metálica" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/casana.png" alt="Casaná" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/sucre.png" alt="Sucre" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/inca_tecnologia.png" alt="Inca Tecnologia" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/farmacias_santa_branca.png" alt="Farmácias Santa Branca" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/hidroeletrica_center.png" alt="Hidroelétrica Center" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/menu.png" alt="Menu" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/top_moveis.png" alt="Top Móveis" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/truckao.png" alt="Truckão" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/colosso.png" alt="Colosso" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/astor-1.png" alt="Astor Capital" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/joa-1.png" alt="Joá" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/cittius-1.png" alt="Cittius" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/ts_infraestrutura.png" alt="TS Infraestrutura" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/vcargo.png" alt="VCargo" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/fortglass.png" alt="FortGlass" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/totus.png" alt="Totus Construções e Incorporações" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/fts.png" alt="FTS Construtora" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/casa_do_chocolate.png" alt="Casa do Chocolate" /></div>
-          <div class="marquee__item"><img src="assets/img/logos/yssa.png" alt="YSSA Marketing de Moda" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/hapvida.png" alt="Hapvida"  width="310" height="183" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/ceara.png" alt="Ceará Sporting Club"  width="163" height="180" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/rommanel.png" alt="Rommanel"  width="360" height="116" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/guebor-1.png" alt="Guebor"  width="242" height="171" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/oticas_diniz.png" alt="Óticas Diniz"  width="367" height="96" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/metalica.png" alt="Metálica"  width="360" height="55" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/casana.png" alt="Casaná"  width="336" height="202" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/sucre.png" alt="Sucre"  width="273" height="152" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/inca_tecnologia.png" alt="Inca Tecnologia"  width="287" height="134" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/farmacias_santa_branca.png" alt="Farmácias Santa Branca"  width="354" height="114" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/hidroeletrica_center.png" alt="Hidroelétrica Center"  width="363" height="78" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/menu.png" alt="Menu"  width="209" height="182" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/top_moveis.png" alt="Top Móveis"  width="270" height="141" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/truckao.png" alt="Truckão"  width="360" height="84" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/colosso.png" alt="Colosso"  width="360" height="144" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/astor-1.png" alt="Astor Capital"  width="347" height="141" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/joa-1.png" alt="Joá"  width="245" height="143" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/cittius-1.png" alt="Cittius"  width="329" height="79" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/ts_infraestrutura.png" alt="TS Infraestrutura"  width="193" height="114" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/vcargo.png" alt="VCargo"  width="360" height="114" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/fortglass.png" alt="FortGlass"  width="360" height="116" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/totus.png" alt="Totus Construções e Incorporações"  width="360" height="115" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/fts.png" alt="FTS Construtora"  width="360" height="102" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/casa_do_chocolate.png" alt="Casa do Chocolate"  width="116" height="59" /></div>
+          <div class="marquee__item"><img src="assets/img/logos/yssa.png" alt="YSSA Marketing de Moda"  width="313" height="125" /></div>
         </div>
       </div>
     </section>
@@ -333,15 +336,15 @@
             <div class="feature-list">
               <div class="feature-item">
                 <div class="feature-item__mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></div>
-                <div><h4>Presença no dia a dia</h4><p>Nada de consultor distante. A gente senta junto, acompanha e cobra execução.</p></div>
+                <div><h3>Presença no dia a dia</h3><p>Nada de consultor distante. A gente senta junto, acompanha e cobra execução.</p></div>
               </div>
               <div class="feature-item">
                 <div class="feature-item__mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></div>
-                <div><h4>Experiência de verdade</h4><p>Mais de 700 projetos em 11 estados, com clientes no Brasil e no exterior.</p></div>
+                <div><h3>Experiência de verdade</h3><p>Mais de 700 projetos em 11 estados, com clientes no Brasil e no exterior.</p></div>
               </div>
               <div class="feature-item">
                 <div class="feature-item__mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></div>
-                <div><h4>Sem juridiquês, sem economês</h4><p>Falamos a língua de quem toca empresa. Diagnóstico claro e próximo passo definido.</p></div>
+                <div><h3>Sem juridiquês, sem economês</h3><p>Falamos a língua de quem toca empresa. Diagnóstico claro e próximo passo definido.</p></div>
               </div>
             </div>
           </div>
@@ -363,10 +366,10 @@
           <h2 data-reveal data-reveal-delay="1">Do diagnóstico ao resultado, sem pular etapa</h2>
         </div>
         <div class="method-steps">
-          <div class="method-step" data-reveal><h4>Diagnóstico</h4><p>Entramos na sua empresa e levantamos números, processos e rotinas. Sem achismo.</p></div>
-          <div class="method-step" data-reveal data-reveal-delay="1"><h4>Plano</h4><p>Definimos juntos as prioridades. Cada ação com prazo, meta e responsável.</p></div>
-          <div class="method-step" data-reveal data-reveal-delay="2"><h4>Execução</h4><p>Colocamos a mão na massa com o seu time, semana a semana.</p></div>
-          <div class="method-step" data-reveal data-reveal-delay="3"><h4>Acompanhamento</h4><p>Medimos o resultado, corrigimos a rota e seguimos até a meta.</p></div>
+          <div class="method-step" data-reveal><h3>Diagnóstico</h3><p>Entramos na sua empresa e levantamos números, processos e rotinas. Sem achismo.</p></div>
+          <div class="method-step" data-reveal data-reveal-delay="1"><h3>Plano</h3><p>Definimos juntos as prioridades. Cada ação com prazo, meta e responsável.</p></div>
+          <div class="method-step" data-reveal data-reveal-delay="2"><h3>Execução</h3><p>Colocamos a mão na massa com o seu time, semana a semana.</p></div>
+          <div class="method-step" data-reveal data-reveal-delay="3"><h3>Acompanhamento</h3><p>Medimos o resultado, corrigimos a rota e seguimos até a meta.</p></div>
         </div>
         <div style="text-align:center; margin-top:var(--space-8)" data-reveal>
           <a class="btn btn--ghost" href="metodologia.html">Conhecer a metodologia</a>
@@ -500,7 +503,7 @@
           </div>
         </div>
         <nav class="footer-col" aria-label="Empresa">
-          <h5>A Pharos</h5>
+          <h2 class="footer-col__titulo">A Pharos</h2>
           <a href="sobre.html">Nós</a>
           <a href="metodologia.html">Metodologia</a>
           <a href="cases.html">Cases</a>
@@ -508,7 +511,7 @@
           <a href="contato.html">Contato</a>
         </nav>
         <nav class="footer-col" aria-label="Soluções">
-          <h5>Soluções</h5>
+          <h2 class="footer-col__titulo">Soluções</h2>
           <a href="servicos.html#gestao-financeira">Gestão Financeira</a>
           <a href="servicos.html#gestao-comercial">Gestão Comercial</a>
           <a href="servicos.html#processos">Gestão de Processos</a>
@@ -518,7 +521,7 @@
           <a href="servicos.html#planejamento-estrategico">Planejamento Estratégico</a>
         </nav>
         <div class="footer-col footer-news">
-          <h5>Newsletter</h5>
+          <h2 class="footer-col__titulo">Newsletter</h2>
           <p>Receba conteúdos de gestão e estratégia no seu&nbsp;e-mail.</p>
           <form class="news-form" data-form data-ok="Pronto. Você vai receber nossos próximos conteúdos." action="https://formsubmit.co/leandro1heliov@gmail.com" method="POST" aria-label="Assinar newsletter">
             <input type="hidden" name="_subject" value="Nova inscrição na newsletter da Pharos" />
